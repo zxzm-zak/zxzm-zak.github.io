@@ -3,10 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Xianwen Ling's Blog</title>
+    <!-- 引入 Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入 Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* 使用 Montserrat 字体 */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            font-weight: 500;
+        }
+        header nav {
+            float: right;
+        }
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .container {
+            display: flex;
+            max-width: 1400px; /* 调整页面最大宽度 */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* 左侧栏样式 */
+        .sidebar {
+            flex: 1;
+            max-width: 300px;
+            padding-right: 20px;
+            border-right: 2px solid #ddd;
+            text-align: center;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 150px;
+            height: auto; /* 保持图片比例 */
+        }
+        .sidebar h2 {
+            margin: 20px 0 10px;
+            font-weight: 500;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 400;
+        }
+        .sidebar i {
+            margin-right: 10px;
+        }
+        /* 右侧栏样式 */
+        .main-content {
+            flex: 2;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column; /* 确保所有内容按顺序排列 */
+        }
+        .about {
+            margin-bottom: 20px;
+        }
+        .about h2 {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .about p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .about a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .about a:hover {
+            text-decoration: underline;
+        }
+        .links a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #007bff;
+            font-weight: 400;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications 部分样式 */
+        .publications {
+            margin-top: 30px;
+        }
+
+        .publications h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .publication-item {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .publication-item img {
+            width: 100%; /* 确保图片宽度自适应 */
+            max-width: 160px; /* 限制最大宽度 */
+            height: auto; /* 保持原始比例 */
+            margin-right: 20px;
+        }
+
+        .publication-details {
+            flex: 1;
+        }
+
+        .publication-details a {
+            font-weight: 700;
+            font-size: 16px;
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        .publication-details a:hover {
+            color: #f09228;
+            text-decoration: underline;
+        }
+
+        .publication-details p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .publication-details em {
+            font-style: italic;
+            color: #555;
+        }
+
+        .links a {
+            margin-right: 15px;
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #f09228;
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML test page.</p>
+    <header>
+        <h1>Zhaxizhuoma's Blog</h1>
+        <nav>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- 左侧栏 -->
+        <div class="sidebar">
+            <img src="img/zhaphoto.jpg" alt="Zhaxizhuoma">
+            <h2>Zhaxizhuoma</h2>
+            <p>Research Assistant at Shanghai AI Laboratory</p>
+            <p><i class="fas fa-map-marker-alt"></i> Shanghai, China</p>
+            <p><i class="fas fa-envelope"></i> 
+                <a href="mailto:zxzmkufufu@gmail.com">Email</a>
+            </p>
+        </div>
+        
+        <!-- 右侧栏 -->
+        <div class="main-content">
+            <div class="about">
+                <h2>About me</h2>
+                <p>I am a research assistant at the Shanghai Artificial Intelligence Laboratory. From May 2024, I have participated in research on embodied intelligence and published papers at the Shanghai Artificial Intelligence Laboratory. And implement research into flexiv, xarm and humanoid robot. I completed my M.Sc. in Automotive Systems at the Technical University of Berlin in December 2023. During my master's degree, I participated in a number of cooperation projects between schools and laboratories, and interned at the German IAV company for one year.</p>
+            </div>
+
+            <div class="projects">
+                <h2>Academic Background</h2>
+                <ul>
+                    <li>Shanghai Artificial Intelligence Laboratory, 2023</li>
+                    <li>Technische Universität Berlin, 2021</li>
+                    <li>Ingenieurgesellschaft Auto und Verkehr, Intern, 2022</li>
+                    <li>Technische Universität Dresden, 2020</li>
+                    <li>Nanjing University of Science and Technology, 2015</li>
+                </ul>
+            </div>
+
+
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Fine tuning of machine learning based image analysis, DCAITI Lab, Germany, 2023</li>
+                    <li>Implementierung von ETSI ITS-G5-Nachrichten in CARLA, IAV, Germany, 2022</li>
+                    <li>Imitation learning on small-autonomous car, Tu-berlin DAI-Labor, Germany, 2022</li>
+                    <li>Environment mapping and indoor localization using a visual slam algorithm for autonomous valet parking, Expleo, Germany, 2021</li>
+                    <li>PHM software development, Tu-berlin, Germany, 2021</li>
+                </ul>
+            </div>
+
+
+            <!-- Publications 部分 -->
+            <div class="publications">
+                <h2>Publications</h2>
+                <!-- 第一篇文章 -->
+                <div class="publication-item">
+                    <img src="img/fastumi.jpg" alt="Fast-UMI" style="width: 100%; max-width: 160px; height: auto;">
+                    <div class="publication-details">
+                        <a href="#">Fast-UMI: A Scalable and Hardware-Independent Universal Manipulation Interface</a>
+                        <p>Ziniu Wu*, Tianyu Wang*, <strong>Zhaxizhuoma*</strong>, Chuyue Guan**, Zhongjie Jia**, Shuai Liang**, Haoming Song, Delin Qu, Dong Wang, Zhigang Wang, Nieqing Cao, Yan Ding#, Bin Zhao#, Xuelong Li</p>
+                        <em>Technical Report</em>
+                        <br>
+                        <div class="links">
+                            <a href="https://fastumi.com/fastumi_short.pdf">[Paper]</a>
+                            <a href="https://fastumi.com/">[Project]</a>
+                        </div>
+                        <p>In this work, we introduce Fast-UMI, an interface-mediated manipulation system comprising two key components: a handheld device operated by humans for data collection and a robot-mounted device used during policy inference. This system offers an efficient and user-friendly tool for robotic learning data acquisition.</p>
+                    </div>
+                </div>
+                
+
+                <!-- 第二篇文章 -->
+                <div class="publication-item">
+                    <img src="img/alignbot.png" alt="AlignBot" style="width: 100%; max-width: 160px; height: auto;">
+                    <div class="publication-details">
+                        <a href="#">AlignBot: Aligning VLM-powered Customized Task Planning with User Reminders Through Fine-Tuning for Household Robots</a>
+                        <p><strong>Zhaxizhuoma*</strong>, Pengan Chen*, Ziniu Wu*, Jiawei Sun, Dong Wang, Peng Zhou, Nieqing Cao, Yan Ding# Bin Zhao, Xuelong Li</p>
+                        <em>Under Review</em>
+                        <br>
+                        <div class="links">
+                            <a href="https://arxiv.org/pdf/2409.11905">[Paper]</a>
+                            <a href="https://yding25.com/AlignBot/">[Project]</a>
+                        </div>
+                        <p>This paper presents AlignBot, a novel framework designed to optimize VLM-powered customized task planning for household robots by effectively aligning with user reminders. AlignBot employs a fine-tuned LLaVA-7B model, functioning as an adapter for GPT-4o. This adapter model internalizes diverse forms of user reminders—such as personalized preferences, corrective guidance, and contextual assistance into structured instruction-formatted cues that prompt GPT-4o in generating customized task plans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第三篇文章 -->
+            <div class="publication-item">
+                <img src="img/ORLA.jpg" alt="ORLA" style="width: 100%; max-width: 160px; height: auto;">
+                <div class="publication-details">
+                    <a href="#">ORLA*: Mobile Manipulator-Based Object Rearrangement with Lazy A*</a>
+                    <p>Kai Gao*,<strong>Zhaxizhuoma*</strong>, Shiqi Zhang, Jingjin Yu</p>
+                    <em>Under Review</em>
+                    <br>
+                    <div class="links">
+                        <a href="https://arxiv.org/abs/2309.13707">[Paper]</a>
+                        <a href="https://gaokai15.github.io/ORLA-Star/">[Project]</a>
+                    </div>
+                    <p>In this research, we propose ORLA*, which leverages delayed (lazy) evaluation in searching for a high-quality object pick and place sequence that considers both end-effector and mobile robot base travel.</p>
+                </div>
+            </div>
+                
+            <!-- Robotic Demos 部分 -->
+            <div class="robotic-demos">
+                <h2>Robotic Demos</h2>
+                
+                <!-- 第四段视频 -->
+                <div class="demo-item">
+                    <h3>Humanoid robot Demo</h3> <!-- 视频标题 -->
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/81.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 第一段视频 -->
+                <div class="demo-item">
+                    <h3>AlignBot Demos</h3> <!-- 视频标题 -->
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/21.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/31.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/51.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 第二段视频 -->
+                <div class="demo-item">
+                    <h3>FLASH</h3> <!-- 视频标题 -->
+                    <p>Fast Learning and Servoing for High-precision Domestic Manipulation Tasks</p> <!-- 视频说明 -->
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/41.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 第三段视频 -->
+                <div class="demo-item">
+                    <h3>ACT on flexiv</h3> <!-- 视频标题 -->
+                    <video controls style="max-width: 600px; width: 100%; height: auto;"> <!-- 控制视频大小 -->
+                        <source src="video/7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 第四段视频 -->
+                <div class="demo-item">
+                    <h3>ORLA Demo</h3> <!-- 视频标题 -->
+                    <iframe src="https://drive.google.com/file/d/1IyARBaeSRwIvmFvVoYpw3Orjy4gRTZq0/preview" 
+                            width="600" 
+                            height="400" 
+                            allow="autoplay"></iframe>
+                </div>
+
+            </div>
+
+                <!-- 可以继续添加更多视频 -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
